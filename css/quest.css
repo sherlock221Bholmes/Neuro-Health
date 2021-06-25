@@ -1,0 +1,173 @@
+/** code by webdevtrick (https://webdevtrick.com) **/
+body {
+    padding-top: 2rem;
+    padding-bottom: calc(6.7rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bgnew.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.grid {
+    width: 60%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border: 2px solid #cbcbcb;
+    
+}
+#quiz{text-align: center;
+    color: #01BBFF;
+}
+.getback{border-radius: 10%;
+    border: 1px solid #f16829;
+    background: cyan;
+    text-decoration: none;
+    font-size: medium;
+    color:white;
+    margin-top:10 %;
+    position: absolute;
+    display:block;
+
+}
+
+.grid h1 {
+    font-family: "sans-serif";
+    background-color: #01BBFF;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+
+    
+}
+
+#score {
+    color: #01BBFF;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid #question {
+    font-family: "monospace";
+    font-size: 30px;
+    color: #01BBFF;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+.emoji{
+    height:50%;
+    width:50%;
+    margin-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#btn0, #btn1, #btn2, #btn3 , #btn4{
+    background-color: #01BBFF;
+    width: 25%;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #fd943d;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover , #btn4:hover{
+    cursor: pointer;
+    background-color: #fd7d27;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+
+#progress {
+    color: #2b2b2b;
+    font-size: 18px;
+}
+@media(max-width:480px){
+ body{ padding-top: 2rem;
+    padding-bottom: calc(4rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/mob.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height:58%;
+    width:95%;
+   }
+   .grid {
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border: 2px solid #cbcbcb;
+    
+}
+#quiz{text-align: center;
+    color: #01BBFF;
+}
+
+.grid h1 {
+    font-family: "sans-serif";
+    background-color: #01BBFF;
+    font-size:larger;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+
+    
+}
+
+#score {
+    color: #01BBFF;
+    text-align: center;
+    font-size:medium;
+}
+
+.grid #question {
+    font-family: "monospace";
+    font-size:medium;
+    color: #01BBFF;
+    text-align: left;
+}
+
+.buttons {
+    margin-top: 15%;
+}
+
+#btn0, #btn1, #btn2, #btn3 , #btn4{
+    background-color: #01BBFF;
+    width: 100%;
+    font-size:medium;
+    color: #fff;
+    border: 2px solid #fd943d;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    font-weight: bold;
+    border-radius: 5%;
+    display:block;
+    object-position: center;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover , #btn4:hover{
+    cursor: pointer;
+    background-color: #fd7d27;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+}
