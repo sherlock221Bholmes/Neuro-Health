@@ -176,9 +176,9 @@ z-index:1000;
   .chat_box{
     position:fixed;
     right:20px;
-    bottom:160px;
+    bottom:65px;
     width:90%;
-    height:65vh;
+    height:80vh;
     background: #dedede;
     z-index: 1000;
     transition:all 0.3s ease-out;
