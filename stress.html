@@ -21,6 +21,9 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/style2.css" rel="stylesheet" />
+    <link href="css/jquery.convform.css" rel="stylesheet" />
+    <link href="css/jquery.convform.min.css" rel="stylesheet" />
+
 </head>
 
 <body id="page-top">
@@ -48,6 +51,79 @@
             </div>
         </div>
     </nav>
+    <!--Chat-bot-->
+    <div class="chat_icon">
+        <i class="fa fa-comments" aria-hiden="true"></i>
+        <h5>CHAT NOW</h5>
+    </div>
+    <div class="chat_box">
+        <div id="chat" class="conv-form-wrapper">
+            <form action="" method="GET" class="hidden">
+                <select name="start"
+                    data-conv-question="Hi! Hope you are doing well.Have you taken the Stress-meter Test?">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <div data-conv-fork="start">
+                    <div data-conv-case="yes">
+                        <select name="test" data-conv-question="Good! What is your stress level then?">
+                            <option value="high">High</option>
+                            <option value="low">Moderate/Low</option>
+                        </select>
+                        <div data-conv-fork="test">
+                            <div data-conv-case="high">
+                                <select name="prob"
+                                    data-conv-question="No need to freak out.You are fine.Have you been experiencing sleeplessness,sudden urge to cry,weight gain or weight-loss?">
+                                    <option value="pos">Yes</option>
+                                    <option value="neg">No</option>
+                                </select>
+                                <div data-conv-fork="prob">
+                                    <div data-conv-case="pos">
+                                        <select name="hiprob"
+                                            data-conv-question="Are you having any suicidal thoughts lately?">
+                                            <option value="red">Yes</option>
+                                            <option value="orange">No</option>
+                                        </select>
+                                        <div data-conv-fork="hiprob">
+                                            <div data-conv-case="red">
+                                                <select name="serious"
+                                                    data-conv-question="You need to see a doctor as soon as possible.Your condition might be serious.<br>Thanks for your time!">
+                                                    <option value="ab"> Visit a doctor</option>
+                                                </select>
+
+                                            </div>
+                                            <div data-conv-case="orange">
+                                                <select name="probno"
+                                                    data-conv-question="Ok then! You just need to enjoy your life. Spend time with the people who love and care about you.Do things that you enjoy.Life is a journey and you need to enjoy every part of it.After every failure,there will be success,and vice-versa.You just need to hold on!!<br>And you should visit a doctor.It always helps.<br>Thanks for your time!">
+                                                    <option value="abc">Visit a doctor.</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-conv-case="neg">
+                                        <select name="problo"
+                                            data-conv-question="Ok then! You just need to enjoy your life. Spend time with the people who love and care about you.Do things that you enjoy.Life is a journey and you need to enjoy every part of it.After every failure,there will be success,and vice-versa.You just need to hold on!!<br>Thanks for your time!">
+                                            <option value="abcd">Go through Solutions on our page.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-conv-case="low">
+                                <select name="noprob"
+                                    data-conv-question="Chill out!You are just fine.Just read out our solutions.And keep in mind,healthy lifestyle is key to heathy brain.<br>Thanks for your time!">
+                                    <option value="abcde">Go through Solutions</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-conv-case="no">
+                        <input type="text"
+                            data-conv-question="Then you should take the test first.<br>Thanks for your time!">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- Masthead-->
     <header class="masthead3">
         <div class="container h-100">
@@ -57,9 +133,9 @@
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 font-weight-light mb-5">Take this test and get to know how severely you are stressed.(The test is based on Perceived Stress Scale.)</p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger"
-                        href="question.html">Start Test</a>
+                    <p class="text-white-75 font-weight-light mb-5">Take this test and get to know how severely you are
+                        stressed.(The test is based on Perceived Stress Scale.)</p>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="question.html">Start Test</a>
 
                 </div>
             </div>
@@ -85,15 +161,15 @@
                         Too much of any type of stress can feel overwhelming, and it can often sneak up on us. When you
                         need to relax your mind and body immediately, below are nine easy strategies for how to calm
                         yourself down in the moment so you can deal with whatever situation is at hand.</b></p>
-                        <ul style="color: whitesmoke;font-weight: bold;text-align: left;">
-                            <li>Take a short walk</li>
-                            <li>Breathe deeply</li>
-                            <li>Visualize Relief</li>
-                            <li>Reframe your situation</li>
-                            <li>Relax your muscles</li>
-                            <li>Sniff something soothing</li>
-                            <li>Drink some water</li>
-                        </ul>
+                    <ul style="color: whitesmoke;font-weight: bold;text-align: left;">
+                        <li>Take a short walk</li>
+                        <li>Breathe deeply</li>
+                        <li>Visualize Relief</li>
+                        <li>Reframe your situation</li>
+                        <li>Relax your muscles</li>
+                        <li>Sniff something soothing</li>
+                        <li>Drink some water</li>
+                    </ul>
 
                 </div>
             </div>
@@ -146,6 +222,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.convform.js"></script>
+    <script src="js/jquery.convform.min.js"></script>
 </body>
 
 </html>

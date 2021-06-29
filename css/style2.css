@@ -149,3 +149,54 @@ font-weight: bolder;}
 #disorders h3,#solutions h3{font-size: large;
     color:coral;
 font-weight: bold;} 
+.chat_icon{position:fixed;
+right:30px;
+bottom:0;
+font-size:100px;
+color:rgb(3, 247, 234);
+cursor:pointer;
+z-index:1000;
+}
+.chat_box{
+  position:fixed;
+  right:20px;
+  bottom:60px;
+  width:400px;
+  height:80vh;
+  background: #dedede;
+  z-index: 1000;
+  transition:all 0.3s ease-out;
+  transform:scaleY(0);
+}
+.chat_box.active{
+  transform:scaleY(1);
+}
+
+@media(max-width:480px){
+  .chat_box{
+    position:fixed;
+    right:20px;
+    bottom:160px;
+    width:90%;
+    height:65vh;
+    background: #dedede;
+    z-index: 1000;
+    transition:all 0.3s ease-out;
+    transform:scaleY(0);
+  }
+  .chat_box.active{
+    transform:scaleY(1);
+  }
+  
+}
+.hidden{
+  display:none;
+}
+.conv-form-wrapper textarea{
+  height:30px;
+  overflow:hidden;
+  resize:none;
+} 
+#messages{
+  padding:20px;
+}
