@@ -21,7 +21,7 @@ body {
 #quiz{text-align: center;
     color: #01BBFF;
 }
-.getback{border-radius: 10%;
+.getback{border-radius: 25px;
     border: 1px solid #f16829;
     background: cyan;
     text-decoration: none;
