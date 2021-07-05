@@ -339,6 +339,11 @@ progress {
   font: inherit;
   -webkit-appearance: button;
 }
+p{
+  text-align:justify;
+  text-justify:inter-word;
+  font-size:larger;
+}
 
 output {
   display: inline-block;
